@@ -79,5 +79,4 @@ runs:
       run: |
         git config --global url."https://${{ inputs.github-token }}@github.com".insteadOf https://github.com
         make go-mod-download
-        make go-mod-tidy
         du -h -d 1 ${{ steps.metadata.outputs.cache-path }}

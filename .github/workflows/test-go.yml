@@ -443,7 +443,7 @@ jobs:
               -- \
               $package_parallelism \
               -tags "${{ inputs.go-tags }}" \
-              -timeout=${{ env.TIMEOUT_IN_MINUTES }}m \
+              -timeout=40m \
               -parallel=${{ inputs.go-test-parallelism }} \
               ${{ inputs.extra-flags }} \
       - name: Prepare datadog-ci
